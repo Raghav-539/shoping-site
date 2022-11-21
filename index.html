@@ -1,0 +1,1495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopify.in</title>
+
+    <!-- css linking -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <!-- favicon icon link -->
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+
+    <!-- google jquery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <!-- main div -->
+    <div class="main">
+        <!-- header -->
+        <header class="header" id="header">
+            <!-- navbar -->
+            <div class="nav">
+                <input type="checkbox" id="checkbox">
+                <label for="checkbox">
+                    <i class="fas fa-bars" id="bars"></i>
+                    <i class="fas fa-times" id="close"></i>
+                </label>
+                <h1>Shopify</h1>
+                <ul>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="./info/about_website.html">About</a></li>
+                    <li><a href="./info/contact_form.html">Contact</a></li>
+                    <li><a href="./info/sign_in.html">Account</a></li>
+                    <li><a href="#cart">Cart <i class="fas fa-shopping-bag"></i></a></li>
+                    <li><a href="./info/payment.html">Pay</a></li>
+                    
+                    <!-- cart light animation box -->
+                    <div id="cart" class="container">
+				
+			      <a href="#" >X</a>
+				  
+					<!-- <h1>Shopping Cart</h1> -->
+
+                    <div class="cart">
+                        <div class="products">
+                            <div class="product">
+                                <img src="images/detail_image/img2.jpg">
+                                <div class="product-info">
+                                    <h3 class="product-name">OnePlus 9 Pro 5G</h3>
+                                    <h4 class="product-price">₹ 64,999.00</h4>
+                                    <p class="product-quantity">Qnt: <input value="1" name="">
+                                    <p class="product-remove">
+                                        <i class="fa fa-trash" aria-hidden="true"></i>
+                                        <span class="remove">Remove</span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="product">
+                                <img src="images/detail_image/img5.jpg">
+                                <div class="product-info">
+                                    <h3 class="product-name">OnePlus Nord 5G</h3>
+                                    <h4 class="product-price">₹ 27,999.00</h4>
+                                    <p class="product-quantity">Qnt: <input value="1" name="">
+                                    <p class="product-remove">
+                                        <i class="fa fa-trash" aria-hidden="true"></i>
+                                        <span class="remove">Remove</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-total">
+                            <p>
+                                <span>Total Price</span>
+                                <span>₹ 74,988</span>
+                            </p>
+
+                            <p>
+                                <span>Number of Items</span>
+                                <span>2</span>
+                            </p>
+
+                            <p>
+                                <span>You Save</span>
+                                <span>₹ 1,000</span>
+                            </p>
+                            <a href="./info/payment.html">Proceed to Checkout</a>
+                        </div>
+	                </div>
+                  </div>
+                </ul>
+            </div>
+        </header>
+        
+        <!-- figure for display -->
+        <figure>
+            <img src="./images/img.jpg" id="display" alt="img">
+        </figure>
+
+        <!-- some card offers -->
+        <div class="cards">
+            <div class="card-offer">
+                <figure><img src="./images/card-offer/card1.png" alt="card"></figure>
+                <figure><img src="./images/card-offer/card2.png" alt="card"></figure>
+                <figure><img src="./images/card-offer/card3.png" alt="card"></figure>
+            </div>
+            <div class="card-offer">
+                <figure><img src="./images/card-offer/card4.png" alt="card"></figure>
+                <figure><img src="./images/card-offer/card5.png" alt="card"></figure>
+                <figure><img src="./images/card-offer/card6.png" alt="card"></figure>
+            </div>
+        </div>
+
+        <div id="products">
+            <!-- section for mobile -->
+            <section id="mobile">
+                <h2>--- Mobile's ---</h2>
+                <div class="images">
+                    <figure><img src="./images/mobiles/img1.PNG" alt="mobile"><figcaption>Price &#8377;64,999.00</figcaption>
+                        <figcaption>Rating 
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </figcaption>
+                    <figcaption>
+                       <a href="./info/product_detail.html"><button type="button">See Details</button> </a>
+                        <button type="button"  onclick="myFunc()">Add to Cart</button>
+                    </figcaption>
+                    </figure>
+                    <figure><img src="./images/mobiles/img2.PNG" alt="mobile"><figcaption>Price &#8377; 9,989.00</figcaption>
+                        <figcaption>Rating 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </figcaption>
+                        <figcaption>
+                            <button type="button" >See Details</button>
+                            <button type="button" onclick="myFunc()">Add to Cart</button>
+                        </figcaption>
+                    </figure>
+                    <figure><img src="./images/mobiles/img3.PNG" alt="mobile"><figcaption>Price &#8377;27,999.00</figcaption>
+                        <figcaption>Rating 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </figcaption>
+                        <figcaption>
+                            <a href="./info/product_detail2.html"><button type="button">See Details</button></a>
+                            <button type="button" onclick="myFunc()">Add to Cart</button>
+                        </figcaption>
+                    </figure>
+                    <figure><img src="./images/mobiles/img4.PNG" alt="mobile"><figcaption>Price &#8377;73,999.00</figcaption>
+                        <figcaption>Rating 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </figcaption>
+                        <figcaption>
+                            <button type="button">See Details</button>
+                            <button type="button" onclick="myFunc()">Add to Cart</button>
+                        </figcaption>
+                    </figure>
+                    <figure><img src="./images/mobiles/img5.PNG" alt="mobile"><figcaption>Price &#8377;11,490.00</figcaption>
+                        <figcaption>Rating 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </figcaption>
+                        <figcaption>
+                            <button type="button">See Details</button>
+                            <button type="button" onclick="myFunc()">Add to Cart</button>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <!-- section for today deal -->
+            <section id="deal">
+                <h2>--- Today Deal's ---</h2>
+                <div class="images">
+                    <figure><img src="./images/deals/img1.PNG" alt="deal's"><figcaption>Price &#8377;78,999.00</figcaption>
+                        <figcaption>Rating 
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </figcaption>
+                    <figcaption>
+                        <button type="button">See Details</button>
+                        <button type="button" onclick="myFunc()">Add to Cart</button>
+                    </figcaption>
+                    </figure>
+                    <figure><img src="./images/deals/img2.PNG" alt="deal's"><figcaption>Price &#8377; 4,989.00</figcaption>
+                        <figcaption>Rating 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </figcaption>
+                        <figcaption>
+                            <button type="button">See Details</button>
+                            <button type="button" onclick="myFunc()">Add to Cart</button>
+                        </figcaption>
+                    </figure>
+                    <figure><img src="./images/deals/img3.PNG" alt="deal's"><figcaption>Price &#8377;27,999.00</figcaption>
+                        <figcaption>Rating 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </figcaption>
+                        <figcaption>
+                            <button type="button">See Details</button>
+                            <button type="button" onclick="myFunc()">Add to Cart</button>
+                        </figcaption>
+                    </figure>
+                    <figure><img src="./images/deals/img4.PNG" alt="deal's"><figcaption>Price &#8377;23,999.00</figcaption>
+                        <figcaption>Rating 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </figcaption>
+                        <figcaption>
+                            <button type="button">See Details</button>
+                            <button type="button" onclick="myFunc()">Add to Cart</button>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <!-- section for electonics -->
+            <section id="electronic">
+                <h2>--- Eletronics ---</h2>
+                <div class="images">
+                    <figure><a href="#laptop"><img src="./images/electronics/img1.PNG" alt="electonics"></a><figcaption>Laptop's</figcaption>
+                        <figcaption>Rating 
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </figcaption>
+                    </figure>
+                    <figure><a href="#headphone"><img src="./images/electronics/img2.PNG" alt="electronic"></a><figcaption>Headphones</figcaption>
+                        <figcaption>Rating 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </figcaption>
+                    </figure>
+                    <figure><a href="#watch"><img src="./images/electronics/img3.PNG" alt="electronic"></a><figcaption>Watches</figcaption>
+                        <figcaption>Rating 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </figcaption>
+                    </figure>
+                    <figure><a href="#camera"><img src="./images/electronics/img4.PNG" alt="electronic"></a><figcaption>Camera's</figcaption>
+                        <figcaption>Rating 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </figcaption>
+                    </figure>
+                    <figure><a href="#computer"><img src="./images/electronics/img5.PNG" alt="electronic"></a><figcaption>Computer's</figcaption>
+                        <figcaption>Rating
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>            
+
+            <!-- some card offers -->
+            <div class="cards">
+                <div class="card-offer">
+                    <figure><img src="./images/card-offer/card7.png" alt="card"></figure>
+                    <figure><img src="./images/card-offer/card8.png" alt="card"></figure>
+                    <figure><img src="./images/card-offer/card9.png" alt="card"></figure>
+                </div>
+            </div>
+
+            <!-- section for laptop -->
+            <section id="laptop">
+                <h2>--- Laptop's ---</h2>
+                <div class="images">
+                    <figure><img src="./images/laptops/img1.PNG" alt="laptop"><figcaption>Price &#8377;39,999.00</figcaption>
+                        <figcaption>Rating 
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </figcaption>
+                    <figcaption>
+                        <button type="button">See Details</button>
+                        <button type="button" onclick="myFunc()">Add to Cart</button>
+                    </figcaption>
+                    </figure>
+                    <figure><img src="./images/laptops/img2.PNG" alt="laptop"><figcaption>Price &#8377; 28,999.00</figcaption>
+                        <figcaption>Rating 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </figcaption>
+                        <figcaption>
+                            <button type="button">See Details</button>
+                            <button type="button" onclick="myFunc()">Add to Cart</button>
+                        </figcaption>
+                    </figure>
+                    <figure><img src="./images/laptops/img3.PNG" alt="laptop"><figcaption>Price &#8377;23,999.00</figcaption>
+                        <figcaption>Rating 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </figcaption>
+                        <figcaption>
+                            <button type="button">See Details</button>
+                            <button type="button" onclick="myFunc()">Add to Cart</button>
+                        </figcaption>
+                    </figure>
+                    <figure><img src="./images/laptops/img4.PNG" alt="laptop"><figcaption>Price &#8377;24,999.00</figcaption>
+                        <figcaption>Rating 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </figcaption>
+                        <figcaption>
+                            <button type="button">See Details</button>
+                            <button type="button" onclick="myFunc()">Add to Cart</button>
+                        </figcaption>
+                    </figure>
+                    <figure><img src="./images/laptops/img5.PNG" alt="laptop"><figcaption>Price &#8377;64,990.00</figcaption>
+                        <figcaption>Rating 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </figcaption>
+                        <figcaption>
+                            <button type="button">See Details</button>
+                            <button type="button" onclick="myFunc()">Add to Cart</button>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <!-- section for watch -->
+            <section id="watch">
+                <h2>--- Watches ---</h2>
+                <div class="images">
+                    <figure><img src="./images/watch/img1.PNG" alt="watch"><figcaption>Price &#8377;2,999.00</figcaption>
+                        <figcaption>Rating 
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </figcaption>
+                    <figcaption>
+                        <button type="button">See Details</button>
+                        <button type="button"  onclick="myFunc()">Add to Cart</button>
+                    </figcaption>
+                    </figure>
+                    <figure><img src="./images/watch/img2.PNG" alt="watch"><figcaption>Price &#8377; 2,989.00</figcaption>
+                        <figcaption>Rating 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </figcaption>
+                        <figcaption>
+                            <button type="button">See Details</button>
+                            <button type="button"  onclick="myFunc()">Add to Cart</button>
+                        </figcaption>
+                    </figure>
+                    <figure><img src="./images/watch/img3.PNG" alt="watch"><figcaption>Price &#8377;9,999.00</figcaption>
+                        <figcaption>Rating 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </figcaption>
+                        <figcaption>
+                            <button type="button">See Details</button>
+                            <button type="button"  onclick="myFunc()">Add to Cart</button>
+                        </figcaption>
+                    </figure>
+                    <figure><img src="./images/watch/img4.PNG" alt="watch"><figcaption>Price &#8377;9,999.00</figcaption>
+                        <figcaption>Rating 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </figcaption>
+                        <figcaption>
+                            <button type="button">See Details</button>
+                            <button type="button"  onclick="myFunc()">Add to Cart</button>
+                        </figcaption>
+                    </figure>
+                    <figure><img src="./images/watch/img5.PNG" alt="watch"><figcaption>Price &#8377;10,990.00</figcaption>
+                        <figcaption>Rating 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </figcaption>
+                        <figcaption>
+                            <button type="button">See Details</button>
+                            <button type="button"  onclick="myFunc()">Add to Cart</button>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <!-- some card offers -->
+            <div class="cards">
+                <div class="card-offer">
+                    <figure><img src="./images/card-offer/card10.png" alt="card"></figure>
+                    <figure><img src="./images/card-offer/card11.png" alt="card"></figure>
+                    <figure><img src="./images/card-offer/card12.png" alt="card"></figure>
+                </div>
+            </div>
+
+            <!-- section for kitchen -->
+            <section id="kitchen">
+                <h2>--- Home & Kitchen Essentials's ---</h2>
+                <div class="images">
+                    <figure><img src="./images/kitchen/img1.PNG" alt="kitchen"><figcaption>Price &#8377;499.00</figcaption>
+                        <figcaption>Rating 
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </figcaption>
+                    <figcaption>
+                        <button type="button">See Details</button>
+                        <button type="button"  onclick="myFunc()">Add to Cart</button>
+                    </figcaption>
+                    </figure>
+                    <figure><img src="./images/kitchen/img2.PNG" alt="kitchen"><figcaption>Price &#8377;789.00</figcaption>
+                        <figcaption>Rating 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </figcaption>
+                        <figcaption>
+                            <button type="button">See Details</button>
+                            <button type="button"  onclick="myFunc()">Add to Cart</button>
+                        </figcaption>
+                    </figure>
+                    <figure><img src="./images/kitchen/img3.PNG" alt="kitchen"><figcaption>Price &#8377;499.00</figcaption>
+                        <figcaption>Rating 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </figcaption>
+                        <figcaption>
+                            <button type="button">See Details</button>
+                            <button type="button"  onclick="myFunc()">Add to Cart</button>
+                        </figcaption>
+                    </figure>
+                    <figure><img src="./images/kitchen/img4.PNG" alt="kitchen"><figcaption>Price &#8377;699.00</figcaption>
+                        <figcaption>Rating 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </figcaption>
+                        <figcaption>
+                            <button type="button">See Details</button>
+                            <button type="button"  onclick="myFunc()">Add to Cart</button>
+                        </figcaption>
+                    </figure>
+                    <figure><img src="./images/kitchen/img5.PNG" alt="kitchen"><figcaption>Price &#8377;290.00</figcaption>
+                        <figcaption>Rating 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </figcaption>
+                        <figcaption>
+                            <button type="button">See Details</button>
+                            <button type="button"  onclick="myFunc()">Add to Cart</button>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <!-- section for men fashion -->
+            <section id="men">
+                <h2>--- Men's Fashion ---</h2>
+                <div class="images">
+                    <figure><img src="./images/men/img1.PNG" alt="men_fashion"><figcaption>Price &#8377;499.00</figcaption>
+                        <figcaption>Rating 
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </figcaption>
+                    <figcaption>
+                        <button type="button">See Details</button>
+                        <button type="button"  onclick="myFunc()">Add to Cart</button>
+                    </figcaption>
+                    </figure>
+                    <figure><img src="./images/men/img2.PNG" alt="men_fashion"><figcaption>Price &#8377;789.00</figcaption>
+                        <figcaption>Rating 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </figcaption>
+                        <figcaption>
+                            <button type="button">See Details</button>
+                            <button type="button"  onclick="myFunc()">Add to Cart</button>
+                        </figcaption>
+                    </figure>
+                    <figure><img src="./images/men/img3.PNG" alt="men_fashion"><figcaption>Price &#8377;499.00</figcaption>
+                        <figcaption>Rating 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </figcaption>
+                        <figcaption>
+                            <button type="button">See Details</button>
+                            <button type="button"  onclick="myFunc()">Add to Cart</button>
+                        </figcaption>
+                    </figure>
+                    <figure><img src="./images/men/img4.PNG" alt="men_fashion"><figcaption>Price &#8377;699.00</figcaption>
+                        <figcaption>Rating 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </figcaption>
+                        <figcaption>
+                            <button type="button">See Details</button>
+                            <button type="button" onclick="myFunc()">Add to Cart</button>
+                        </figcaption>
+                    </figure>
+                    <figure><img src="./images/men/img5.PNG" alt="men_fashion"><figcaption>Price &#8377;990.00</figcaption>
+                        <figcaption>Rating 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </figcaption>
+                        <figcaption>
+                            <button type="button">See Details</button>
+                            <button type="button" onclick="myFunc()">Add to Cart</button>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <!-- section for women fashion -->
+            <section id="women">
+                <h2>--- Women's Fashion ---</h2>
+                <div class="images">
+                    <figure><img src="./images/women/img1.PNG" alt="women_fashion"><figcaption>Price &#8377;499.00</figcaption>
+                        <figcaption>Rating 
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </figcaption>
+                    <figcaption>
+                        <button type="button">See Details</button>
+                        <button type="button" onclick="myFunc()">Add to Cart</button>
+                    </figcaption>
+                    </figure>
+                    <figure><img src="./images/women/img2.PNG" alt="women_fashion"><figcaption>Price &#8377;789.00</figcaption>
+                        <figcaption>Rating 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </figcaption>
+                        <figcaption>
+                            <button type="button">See Details</button>
+                            <button type="button" onclick="myFunc()">Add to Cart</button>
+                        </figcaption>
+                    </figure>
+                    <figure><img src="./images/women/img3.PNG" alt="women_fashion"><figcaption>Price &#8377;499.00</figcaption>
+                        <figcaption>Rating 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </figcaption>
+                        <figcaption>
+                            <button type="button">See Details</button>
+                            <button type="button" onclick="myFunc()">Add to Cart</button>
+                        </figcaption>
+                    </figure>
+                    <figure><img src="./images/women/img4.PNG" alt="women_fashion"><figcaption>Price &#8377;699.00</figcaption>
+                        <figcaption>Rating 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </figcaption>
+                        <figcaption>
+                            <button type="button">See Details</button>
+                            <button type="button" onclick="myFunc()">Add to Cart</button>
+                        </figcaption>
+                    </figure>
+                    <figure><img src="./images/women/img5.PNG" alt="women_fashion"><figcaption>Price &#8377;890.00</figcaption>
+                        <figcaption>Rating 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </figcaption>
+                        <figcaption>
+                            <button type="button">See Details</button>
+                            <button type="button"  onclick="myFunc()">Add to Cart</button>
+                        </figcaption>
+                    </figure>
+                </div>
+                </section>
+
+            <!-- some card offers -->
+            <div class="cards">
+                    <div class="card-offer">
+                        <figure><img src="./images/card-offer/card13.png" alt="card"></figure>
+                        <figure><img src="./images/card-offer/card14.png" alt="card"></figure>
+                        <figure><img src="./images/card-offer/card15.png" alt="card"></figure>
+                    </div>
+            </div>
+
+            <!-- section for kid fashion -->
+            <section id="kid">
+                    <h2>--- Kids's Fashion ---</h2>
+                <div class="images">
+                    <figure><img src="./images/kids/img1.PNG" alt="kid_fashion"><figcaption>Price &#8377;499.00</figcaption>
+                        <figcaption>Rating 
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </figcaption>
+                    <figcaption>
+                        <button type="button">See Details</button>
+                        <button type="button" onclick="myFunc()">Add to Cart</button>
+                    </figcaption>
+                    </figure>
+                    <figure><img src="./images/kids/img2.PNG" alt="kid_fashion"><figcaption>Price &#8377;289.00</figcaption>
+                        <figcaption>Rating 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </figcaption>
+                        <figcaption>
+                            <button type="button">See Details</button>
+                            <button type="button" onclick="myFunc()">Add to Cart</button>
+                        </figcaption>
+                    </figure>
+                    <figure><img src="./images/kids/img3.PNG" alt="kid_fashion"><figcaption>Price &#8377;499.00</figcaption>
+                        <figcaption>Rating 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </figcaption>
+                        <figcaption>
+                            <button type="button">See Details</button>
+                            <button type="button" onclick="myFunc()">Add to Cart</button>
+                        </figcaption>
+                    </figure>
+                    <figure><img src="./images/kids/img4.PNG" alt="kid_fashion"><figcaption>Price &#8377;599.00</figcaption>
+                        <figcaption>Rating 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </figcaption>
+                        <figcaption>
+                            <button type="button">See Details</button>
+                            <button type="button" onclick="myFunc()">Add to Cart</button>
+                        </figcaption>
+                    </figure>
+                    <figure><img src="./images/kids/img5.PNG" alt="kid_fashion"><figcaption>Price &#8377;390.00</figcaption>
+                        <figcaption>Rating 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </figcaption>
+                        <figcaption>
+                            <button type="button">See Details</button>
+                            <button type="button" onclick="myFunc()">Add to Cart</button>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <!-- section for footwear -->
+            <section id="footwear">
+                <h2>--- Footwear ---</h2>
+                <div class="images">
+                    <figure><img src="./images/footwear/img1.PNG" alt="footwear"><figcaption>Price &#8377;499.00</figcaption>
+                        <figcaption>Rating 
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </figcaption>
+                    <figcaption>
+                        <button type="button">See Details</button>
+                        <button type="button"  onclick="myFunc()">Add to Cart</button>
+                    </figcaption>
+                    </figure>
+                    <figure><img src="./images/footwear/img2.PNG" alt="footwear"><figcaption>Price &#8377;889.00</figcaption>
+                        <figcaption>Rating 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </figcaption>
+                        <figcaption>
+                            <button type="button">See Details</button>
+                            <button type="button" onclick="myFunc()">Add to Cart</button>
+                        </figcaption>
+                    </figure>
+                    <figure><img src="./images/footwear/img3.PNG" alt="footwear"><figcaption>Price &#8377;499.00</figcaption>
+                        <figcaption>Rating 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </figcaption>
+                        <figcaption>
+                            <button type="button">See Details</button>
+                            <button type="button" onclick="myFunc()">Add to Cart</button>
+                        </figcaption>
+                    </figure>
+                    <figure><img src="./images/footwear/img4.PNG" alt="footwear"><figcaption>Price &#8377;699.00</figcaption>
+                        <figcaption>Rating 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </figcaption>
+                        <figcaption>
+                            <button type="button">See Details</button>
+                            <button type="button" onclick="myFunc()">Add to Cart</button>
+                        </figcaption>
+                    </figure>
+                    <figure><img src="./images/footwear/img5.PNG" alt="footwear"><figcaption>Price &#8377;590.00</figcaption>
+                        <figcaption>Rating 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </figcaption>
+                        <figcaption>
+                            <button type="button">See Details</button>
+                            <button type="button" onclick="myFunc()">Add to Cart</button>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <!-- some card offers -->
+            <div class="cards">
+                <div class="card-offer">
+                    <figure><img src="./images/card-offer/card16.png" alt="card"></figure>
+                    <figure><img src="./images/card-offer/card17.png" alt="card"></figure>
+                    <figure><img src="./images/card-offer/card18.png" alt="card"></figure>
+                </div>
+            </div>
+
+            <!-- section for bags -->
+            <section id="bag">
+                <h2>--- Bag's ---</h2>
+                <div class="images">
+                    <figure><img src="./images/bag/img1.PNG" alt="bag"><figcaption>Price &#8377;499.00</figcaption>
+                        <figcaption>Rating 
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </figcaption>
+                    <figcaption>
+                        <button type="button">See Details</button>
+                        <button type="button" onclick="myFunc()">Add to Cart</button>
+                    </figcaption>
+                    </figure>
+                    <figure><img src="./images/bag/img2.PNG" alt="bag"><figcaption>Price &#8377;889.00</figcaption>
+                        <figcaption>Rating 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </figcaption>
+                        <figcaption>
+                            <button type="button">See Details</button>
+                            <button type="button" onclick="myFunc()">Add to Cart</button>
+                        </figcaption>
+                    </figure>
+                    <figure><img src="./images/bag/img3.PNG" alt="bag"><figcaption>Price &#8377;499.00</figcaption>
+                        <figcaption>Rating 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </figcaption>
+                        <figcaption>
+                            <button type="button">See Details</button>
+                            <button type="button" onclick="myFunc()">Add to Cart</button>
+                        </figcaption>
+                    </figure>
+                    <figure><img src="./images/bag/img4.PNG" alt="bag"><figcaption>Price &#8377;699.00</figcaption>
+                        <figcaption>Rating 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </figcaption>
+                        <figcaption>
+                            <button type="button">See Details</button>
+                            <button type="button" onclick="myFunc()">Add to Cart</button>
+                        </figcaption>
+                    </figure>
+                    <figure><img src="./images/bag/img5.PNG" alt="bag"><figcaption>Price &#8377;590.00</figcaption>
+                        <figcaption>Rating 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </figcaption>
+                        <figcaption>
+                            <button type="button">See Details</button>
+                            <button type="button" onclick="myFunc()">Add to Cart</button>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <!-- section for sunglasses -->
+            <section id="sunglass">
+                <h2>--- Sunglasses ---</h2>
+                <div class="images">
+                    <figure><img src="./images/sunglass/img1.PNG" alt="sunglass"><figcaption>Price &#8377;499.00</figcaption>
+                        <figcaption>Rating 
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </figcaption>
+                    <figcaption>
+                        <button type="button">See Details</button>
+                        <button type="button" onclick="myFunc()">Add to Cart</button>
+                    </figcaption>
+                    </figure>
+                    <figure><img src="./images/sunglass/img2.PNG" alt="sunglass"><figcaption>Price &#8377;889.00</figcaption>
+                        <figcaption>Rating 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </figcaption>
+                        <figcaption>
+                            <button type="button">See Details</button>
+                            <button type="button" onclick="myFunc()">Add to Cart</button>
+                        </figcaption>
+                    </figure>
+                    <figure><img src="./images/sunglass/img3.PNG" alt="sunglass"><figcaption>Price &#8377;499.00</figcaption>
+                        <figcaption>Rating 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </figcaption>
+                        <figcaption>
+                            <button type="button">See Details</button>
+                            <button type="button" onclick="myFunc()">Add to Cart</button>
+                        </figcaption>
+                    </figure>
+                    <figure><img src="./images/sunglass/img4.PNG" alt="sunglass"><figcaption>Price &#8377;699.00</figcaption>
+                        <figcaption>Rating 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </figcaption>
+                        <figcaption>
+                            <button type="button">See Details</button>
+                            <button type="button" onclick="myFunc()">Add to Cart</button>
+                        </figcaption>
+                    </figure>
+                    <figure><img src="./images/sunglass/img5.PNG" alt="sunglass"><figcaption>Price &#8377;590.00</figcaption>
+                        <figcaption>Rating 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </figcaption>
+                        <figcaption>
+                            <button type="button">See Details</button>
+                            <button type="button" onclick="myFunc()">Add to Cart</button>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <!-- some card offers -->
+            <div class="cards">
+                <div class="card-offer">
+                    <figure><img src="./images/card-offer/card19.png" alt="card"></figure>
+                    <figure><img src="./images/card-offer/card20.png" alt="card"></figure>
+                    <figure><img src="./images/card-offer/card21.png" alt="card"></figure>
+                </div>
+            </div>
+
+            <!-- section for headphone -->
+            <section id="headphone">
+                <h2>--- Headphone's ---</h2>
+                <div class="images">
+                    <figure><img src="./images/earphone/img1.PNG" alt="earphone"><figcaption>Price &#8377;499.00</figcaption>
+                        <figcaption>Rating 
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </figcaption>
+                    <figcaption>
+                        <button type="button">See Details</button>
+                        <button type="button" onclick="myFunc()">Add to Cart</button>
+                    </figcaption>
+                    </figure>
+                    <figure><img src="./images/earphone/img2.PNG" alt="earphone"><figcaption>Price &#8377;889.00</figcaption>
+                        <figcaption>Rating 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </figcaption>
+                        <figcaption>
+                            <button type="button">See Details</button>
+                            <button type="button" onclick="myFunc()">Add to Cart</button>
+                        </figcaption>
+                    </figure>
+                    <figure><img src="./images/earphone/img3.PNG" alt="earphone"><figcaption>Price &#8377;499.00</figcaption>
+                        <figcaption>Rating 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </figcaption>
+                        <figcaption>
+                            <button type="button">See Details</button>
+                            <button type="button" onclick="myFunc()">Add to Cart</button>
+                        </figcaption>
+                    </figure>
+                    <figure><img src="./images/earphone/img4.PNG" alt="earphone"><figcaption>Price &#8377;699.00</figcaption>
+                        <figcaption>Rating 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </figcaption>
+                        <figcaption>
+                            <button type="button">See Details</button>
+                            <button type="button" onclick="myFunc()">Add to Cart</button>
+                        </figcaption>
+                    </figure>
+                    <figure><img src="./images/earphone/img5.PNG" alt="earphone"><figcaption>Price &#8377;590.00</figcaption>
+                        <figcaption>Rating 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </figcaption>
+                        <figcaption>
+                            <button type="button">See Details</button>
+                            <button type="button" onclick="myFunc()">Add to Cart</button>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <!-- section for computer -->
+            <section id="computer">
+                <h2>--- Computer's ---</h2>
+                <div class="images">
+                    <figure><img src="./images/computer/img1.PNG" alt="computer"><figcaption>Price &#8377;41,499.00</figcaption>
+                        <figcaption>Rating 
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </figcaption>
+                    <figcaption>
+                        <button type="button">See Details</button>
+                        <button type="button" onclick="myFunc()">Add to Cart</button>
+                    </figcaption>
+                    </figure>
+                    <figure><img src="./images/computer/img2.PNG" alt="computer"><figcaption>Price &#8377;36,899.00</figcaption>
+                        <figcaption>Rating 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </figcaption>
+                        <figcaption>
+                            <button type="button">See Details</button>
+                            <button type="button" onclick="myFunc()">Add to Cart</button>
+                        </figcaption>
+                    </figure>
+                    <figure><img src="./images/computer/img3.PNG" alt="computer"><figcaption>Price &#8377;56,499.00</figcaption>
+                        <figcaption>Rating 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </figcaption>
+                        <figcaption>
+                            <button type="button">See Details</button>
+                            <button type="button" onclick="myFunc()">Add to Cart</button>
+                        </figcaption>
+                    </figure>
+                    <figure><img src="./images/computer/img4.PNG" alt="computer"><figcaption>Price &#8377;41,699.00</figcaption>
+                        <figcaption>Rating 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </figcaption>
+                        <figcaption>
+                            <button type="button">See Details</button>
+                            <button type="button" onclick="myFunc()">Add to Cart</button>
+                        </figcaption>
+                    </figure>
+                    <figure><img src="./images/computer/img5.PNG" alt="computer"><figcaption>Price &#8377;53,990.00</figcaption>
+                        <figcaption>Rating 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </figcaption>
+                        <figcaption>
+                            <button type="button">See Details</button>
+                            <button type="button" onclick="myFunc()">Add to Cart</button>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <!-- some card offers -->
+            <div class="cards">
+                <div class="card-offer">
+                    <figure><img src="./images/card-offer/card22.png" alt="card"></figure>
+                    <figure><img src="./images/card-offer/card23.png" alt="card"></figure>
+                    <figure><img src="./images/card-offer/card24.png" alt="card"></figure>
+                </div>
+            </div>
+
+            <!-- section for speaker -->
+            <section id="speaker">
+                <h2>--- Speaker's ---</h2>
+                <div class="images">
+                    <figure><img src="./images/speaker/img1.PNG" alt="speaker"><figcaption>Price &#8377;2,499.00</figcaption>
+                        <figcaption>Rating 
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </figcaption>
+                    <figcaption>
+                        <button type="button">See Details</button>
+                        <button type="button"  onclick="myFunc()">Add to Cart</button>
+                    </figcaption>
+                    </figure>
+                    <figure><img src="./images/speaker/img2.PNG" alt="speaker"><figcaption>Price &#8377;1,889.00</figcaption>
+                        <figcaption>Rating 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </figcaption>
+                        <figcaption>
+                            <button type="button">See Details</button>
+                            <button type="button" onclick="myFunc()">Add to Cart</button>
+                        </figcaption>
+                    </figure>
+                    <figure><img src="./images/speaker/img3.PNG" alt="speaker"><figcaption>Price &#8377;899.00</figcaption>
+                        <figcaption>Rating 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </figcaption>
+                        <figcaption>
+                            <button type="button">See Details</button>
+                            <button type="button" onclick="myFunc()">Add to Cart</button>
+                        </figcaption>
+                    </figure>
+                    <figure><img src="./images/speaker/img4.PNG" alt="speaker"><figcaption>Price &#8377;3,699.00</figcaption>
+                        <figcaption>Rating 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </figcaption>
+                        <figcaption>
+                            <button type="button">See Details</button>
+                            <button type="button" onclick="myFunc()">Add to Cart</button>
+                        </figcaption>
+                    </figure>
+                    <figure><img src="./images/speaker/img5.PNG" alt="speaker"><figcaption>Price &#8377;1,590.00</figcaption>
+                        <figcaption>Rating 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </figcaption>
+                        <figcaption>
+                            <button type="button">See Details</button>
+                            <button type="button" onclick="myFunc()">Add to Cart</button>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <!-- section for camera -->
+            <section id="camera">
+                <h2>--- Camera's ---</h2>
+                <div class="images">
+                    <figure><img src="./images/camera/img1.PNG" alt="camera"><figcaption>Price &#8377;38,499.00</figcaption>
+                        <figcaption>Rating 
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </figcaption>
+                    <figcaption>
+                        <button type="button">See Details</button>
+                        <button type="button" onclick="myFunc()">Add to Cart</button>
+                    </figcaption>
+                    </figure>
+                    <figure><img src="./images/camera/img2.PNG" alt="camera"><figcaption>Price &#8377;60,889.00</figcaption>
+                        <figcaption>Rating 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </figcaption>
+                        <figcaption>
+                            <button type="button">See Details</button>
+                            <button type="button"  onclick="myFunc()">Add to Cart</button>
+                        </figcaption>
+                    </figure>
+                    <figure><img src="./images/camera/img3.PNG" alt="camera"><figcaption>Price &#8377;3,499.00</figcaption>
+                        <figcaption>Rating 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </figcaption>
+                        <figcaption>
+                            <button type="button">See Details</button>
+                            <button type="button" onclick="myFunc()">Add to Cart</button>
+                        </figcaption>
+                    </figure>
+                    <figure><img src="./images/camera/img4.PNG" alt="camera"><figcaption>Price &#8377;2,699.00</figcaption>
+                        <figcaption>Rating 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </figcaption>
+                        <figcaption>
+                            <button type="button">See Details</button>
+                            <button type="button" onclick="myFunc()">Add to Cart</button>
+                        </figcaption>
+                    </figure>
+                    <figure><img src="./images/camera/img5.PNG" alt="camera"><figcaption>Price &#8377;1,590.00</figcaption>
+                        <figcaption>Rating 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </figcaption>
+                        <figcaption>
+                            <button type="button">See Details</button>
+                            <button type="button0" onclick="myFunc()">Add to Cart</button>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <!-- some card offers -->
+            <div class="cards">
+                <div class="card-offer">
+                    <figure><img src="./images/card-offer/card25.png" alt="card"></figure>
+                    <figure><img src="./images/card-offer/card26.png" alt="card"></figure>
+                    <figure><img src="./images/card-offer/card27.png" alt="card"></figure>
+                </div>
+            </div>
+
+            <!-- section for office accessories -->
+            <section id="accessories">
+                <h2>--- Office Accessories ---</h2>
+                <div class="images">
+                    <figure><img src="./images/accessories/img1.PNG" alt="accessories"><figcaption>Price &#8377;499.00</figcaption>
+                        <figcaption>Rating 
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </figcaption>
+                    <figcaption>
+                        <button type="button">See Details</button>
+                        <button type="button" onclick="myFunc()">Add to Cart</button>
+                    </figcaption>
+                    </figure>
+                    <figure><img src="./images/accessories/img2.PNG" alt="accessories"><figcaption>Price &#8377;889.00</figcaption>
+                        <figcaption>Rating 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </figcaption>
+                        <figcaption>
+                            <button type="button">See Details</button>
+                            <button type="button" onclick="myFunc()">Add to Cart</button>
+                        </figcaption>
+                    </figure>
+                    <figure><img src="./images/accessories/img3.PNG" alt="accessories"><figcaption>Price &#8377;499.00</figcaption>
+                        <figcaption>Rating 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </figcaption>
+                        <figcaption>
+                            <button type="button">See Details</button>
+                            <button type="button" onclick="myFunc()">Add to Cart</button>
+                        </figcaption>
+                    </figure>
+                    <figure><img src="./images/accessories/img4.PNG" alt="accessories"><figcaption>Price &#8377;599.00</figcaption>
+                        <figcaption>Rating 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </figcaption>
+                        <figcaption>
+                            <button type="button">See Details</button>
+                            <button type="button" onclick="myFunc()">Add to Cart</button>
+                        </figcaption>
+                    </figure>
+                    <figure><img src="./images/accessories/img5.PNG" alt="accessories"><figcaption>Price &#8377;699.00</figcaption>
+                        <figcaption>Rating 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </figcaption>
+                        <figcaption>
+                            <button type="button">See Details</button>
+                            <button type="button" onclick="myFunc()">Add to Cart</button>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <!-- section for toys -->
+            <section id="toy">
+                <h2>--- Toys ---</h2>
+                <div class="images">
+                    <figure><img src="./images/toy/img1.PNG" alt="toy"><figcaption>Price &#8377;499.00</figcaption>
+                        <figcaption>Rating 
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </figcaption>
+                    <figcaption>
+                        <button type="button">See Details</button>
+                        <button type="button" onclick="myFunc()">Add to Cart</button>
+                    </figcaption>
+                    </figure>
+                    <figure><img src="./images/toy/img2.PNG" alt="toy"><figcaption>Price &#8377;889.00</figcaption>
+                        <figcaption>Rating 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </figcaption>
+                        <figcaption>
+                            <button type="button">See Details</button>
+                            <button type="button" onclick="myFunc()">Add to Cart</button>
+                        </figcaption>
+                    </figure>
+                    <figure><img src="./images/toy/img3.PNG" alt="toy"><figcaption>Price &#8377;499.00</figcaption>
+                        <figcaption>Rating 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </figcaption>
+                        <figcaption>
+                            <button type="button">See Details</button>
+                            <button type="button" onclick="myFunc()">Add to Cart</button>
+                        </figcaption>
+                    </figure>
+                    <figure><img src="./images/toy/img4.PNG" alt="toy"><figcaption>Price &#8377;699.00</figcaption>
+                        <figcaption>Rating 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </figcaption>
+                        <figcaption>
+                            <button type="button">See Details</button>
+                            <button type="button" onclick="myFunc()">Add to Cart</button>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- footer -->
+
+            <div class="top">
+                <a href="#header"><h3>To top <i class="fas fa-angle-double-up"></i></h3></a>
+            </div>
+
+            <footer class="footer">
+                <div class="footer-col">
+                    <h4>Know Us</h4>
+                    <ul>
+                        <li><a href="./info/about_website.html">About Website</a></li>
+                        <li><a href="./info/our_portfolio.html">Our portfolio</a></li>
+                        <li><a href="./info/contact_form.html">Contact Us</a></li>
+                        <li><a href="#">Work with us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Help!</h4>
+                    <ul>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Order status</a></li>
+                        <li><a href="./info/payment.html">Payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Policy</h4>
+                    <ul>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="./info/terms_use.html">Terms of use</a></li>
+                        <li><a href="./info/help.html">Help</a></li>
+                        <li><a href="./info/privacy_policy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </footer>
+
+            <div class="top">
+                <h3 style="color: white;">  &copy; 2021 Team-8.  All rights reserved.  </h3>
+            </div>
+
+    </div>
+
+    <!-- internal linking -->
+    <script>
+        
+        function myFunc(){
+            alert("Item added to cart!");
+        }
+		
+    </script>
+</body>
+</html>

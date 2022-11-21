@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+    <!-- favicon icon -->
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">  
+
+    <!-- css linking -->
+    <link rel="stylesheet" href="./style.css">
+ 
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+ 
+</head>
+<body>
+
+    <!-- header -->
+    <header class="header" id="header1">
+        <!-- navbar -->
+        <div class="nav">
+            <h2> Shopify's Contact Us Page<a href="../index.html"><i class="fas fa-home"></i></a></h2>
+        </div>
+    </header>
+
+    <!-- contact us -->
+
+    <section class="contact_us">
+
+        <fieldset>    
+            <table cellspacing="5" cellpadding="5">
+                <form>  
+                    <tr>
+                        <td><label for="fname"><i class="bi bi-person-fill"></i> <b> First Name </b></label></td>
+                        <td> <input type="text" id="fname" autocomplete="off"> </td>
+                    </tr>
+                    <tr>
+                        <td><label for="lname"><i class="bi bi-person-fill"></i> <b> Last Name </b></label></td>
+                        <td> <input type="text" id="lname"  autocomplete="off"> </td>
+                    </tr> 
+                    <tr>
+                        <td><label for="email"><i class="bi bi-envelope-fill"></i> <b> Email </b></label></td>
+                        <td><input type="email" id="email" placeholder="email@gmail.com"  autocomplete="off"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="country"><i class="bi bi-house-fill"></i><b> Country </b></label></td>
+                        <td><select id="country" name="country">
+                        <option value="India">India</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                        <option value="australia">Australia</option>
+                        <option value="brazil">Brazil</option> 
+                        <option value="newzealand">New zealand</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td> <label for="msg"><i class="bi bi-chat-left-dots-fill"></i> <b>Write Message</b></label></td>
+                        <td><textarea id="msg" name="msg" placeholder="Write something.." rows="5" cols="25"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td> <button type="submit" value="submit" id="submit" >Submit</button></td>
+                    </tr>
+                </form>  
+            </table>
+        </fieldset>
+
+        <button type="button" onclick="window.location.href='./feedback_form.html'"> Feedback!</button>
+       
+    </section>
+    
+</body>
+</html>

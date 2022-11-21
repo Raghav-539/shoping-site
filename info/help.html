@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Center</title>
+
+    <!-- favicon icon -->
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">  
+
+    <!-- css linking -->
+    <link rel="stylesheet" href="./style.css">
+ 
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+ 
+</head>
+<body>
+
+    <!-- header -->
+    <header class="header" id="header1">
+        <!-- navbar -->
+        <div class="nav">
+            <h2> About Help Center <a href="../index.html"><i class="fas fa-home"></i></a></h2>
+        </div>
+    </header>
+
+    <!-- help center -->
+
+    <section class="help_center">
+        <fieldset >
+            <legend align="center" ><h2>Service Form</h2></legend>
+            <table align="center" cellspacing="5" cellpadding="5">
+                <tr>
+                    <th>*Name :</th>
+                    <td><input type="text" id="i1" onkeyup="f1()" onblur="f11()"></td>
+                    <td id="t1"></td>
+                </tr>
+                
+                <tr>
+                    <th>*Mobile :</th>
+                    <td><input type="text" id="i2" maxlength="10" onkeyup="f2()" onblur="f22()"></td>
+                    <td id="t2"></td>
+                </tr>
+                
+                <tr>
+                    <th>*Email :</th>
+                    <td><input type="text" id="i3" onkeyup="f3()" onblur="f33()"></td>
+                    <td id="t3"></td>
+                </tr>
+                
+                <tr>
+                    <th>*Password :</th>
+                    <td><input type="password" id="i4" required onkeyup="f4()" onblur="f44()"></td>
+                    <td id="t4"></td>
+                </tr>
+                
+                <tr>
+                    <th>*Confirm Password :</th>
+                    <td><input type="password" id="i5" onkeyup="f5()" onblur="f55()"></td>
+                    <td id="t5"></td>
+                </tr>
+                <tr>
+                    <th>*Issue :</th>
+                    <td><textarea id="msg" placeholder="Write issue you are facing.." rows="2" cols="20"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><input type="submit" id="submit" onclick="f6()"></td>
+                </tr>
+            </table>
+            </fieldset>
+        <button type="button" onclick="window.location.href='./about_website.html'"> About Website</button>
+    </section>
+
+    <!-- scripting -->
+    <script src="./help.js"></script>
+</body>
+</html>

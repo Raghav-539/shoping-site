@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Product Details</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- css linking -->
+    <link rel="stylesheet" href="./product_detail.css">
+
+    <!-- favicon icon link -->
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+
+    <!-- font awesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  </head>
+  <body>
+    
+    <div class = "card-wrapper">
+      <div class = "card">
+        <!-- card left -->
+        <div class = "product-imgs">
+          <div class = "img-display">
+            <div class = "img-showcase">
+              <img src = "../images/detail_image/img1.jpg" alt = "image1" id="big-image">
+            </div>
+          </div>
+          <div class = "img-select">
+            <div class = "img-item">
+              
+                <img src = "../images/detail_image/img1.jpg" alt = "image-1" class="small-image">
+              
+            </div>
+            <div class = "img-item">
+              
+                <img src = "../images/detail_image/img2.jpg" alt = "image-2" class="small-image">
+              
+            </div>
+            <div class = "img-item">
+              
+                <img src = "../images/detail_image/img3.jpg" alt = "image-3" class="small-image">
+              
+            </div>
+            <div class = "img-item">
+              
+                <img src = "../images/detail_image/img4.jpg" alt = "image-4" class="small-image">
+              
+            </div>
+          </div>
+        </div>
+        <!-- card right -->
+        <div class = "product-content">
+          <h2 class = "product-title">OnePlus 9 Pro 5G</h2>
+          <a href = "https://www.oneplus.in/" target="_blank" class = "product-link">Visit the OnePlus Store</a>
+          <div class = "product-rating">
+            <i class = "fas fa-star"></i>
+            <i class = "fas fa-star"></i>
+            <i class = "fas fa-star"></i>
+            <i class = "fas fa-star"></i>
+            <i class = "fas fa-star-half-alt"></i>
+            <span>4.7(21)</span>
+          </div>
+
+          <div class = "product-price">
+            <p class = "last-price">Old Price: <span>₹ 76,999.00</span></p>
+            <p class = "new-price">New Price: <span>₹ 64,999.00</span></p>
+          </div>
+
+          <div class = "product-detail">
+            <h2>about this item: </h2>
+            <p>Rear Quad Camera Co-Developed by Hasselblad, 48 MP Main camera, 50 MP Ultra Wide Angle Camera with Sensor size of 1/1.56'', 8 MP Telepoto Lens, 2 MP Monochorme Lens,16 MP Front Camera
+Qualcomm Snapdragon 888 Processor with Adreno 660 GPU
+6.7 Inches Fluid AMOLED Display with 120Hz refresh rate with Latest LTPO technology
+OnePlus Oxygen OS based on Andriod 11
+Comes with 4500 mAh Battery with 65W Wired Charging and 50W Wireless Charging capability</p>
+            <ul>
+              <li>Color: <span>Black</span></li>
+              <li>Available: <span>in stock</span></li>
+              <li>Category: <span>Mobile</span></li>
+              <li>Shipping Area: <span>All over the world</span></li>
+              <li>Shipping Fee: <span>Free</span></li>
+            </ul>
+          </div>
+
+          <div class = "purchase-info">
+            <input type = "number" min = "0" value = "1">
+            <button type = "button" class = "btn" onclick="abc()">
+              Add to Cart <i class = "fas fa-shopping-cart"></i>
+            </button>
+            <button type = "button" class = "btn">Compare</button>
+          </div>
+
+          <div class = "social-links">
+            <p>Share At: </p>
+      
+              <i class = "fab fa-facebook-f"></i>
+            
+           
+              <i class = "fab fa-twitter"></i>
+            
+            
+              <i class = "fab fa-instagram"></i>
+            
+            
+              <i class = "fab fa-whatsapp"></i>
+            
+            
+              <i class = "fab fa-pinterest"></i>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <script src="./product_detail.js"></script>
+  </body>
+</html>

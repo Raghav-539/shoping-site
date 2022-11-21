@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+
+    <!-- favicon icon -->
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">  
+
+    <!-- css linking -->
+    <link rel="stylesheet" href="./style.css">
+ 
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+ 
+</head>
+<body>
+
+    <!-- header -->
+    <header class="header" id="header1">
+        <!-- navbar -->
+        <div class="nav">
+            <h2>Shopify's Sign in Page</h2>
+        </div>
+    </header>
+
+    <!-- sign in -->
+    <section class="sign_in">
+        <fieldset>    
+            <form>
+                <label for="email"><i class="bi bi-envelope-fill"></i> Email Id</label> &nbsp;
+                <input type="email" id="email" placeholder="email@gmail.com" autocomplete="off" required> <br><br>
+                <label for="password"><i class="bi bi-key-fill"></i> Password</label> &nbsp;
+                <input type="password" id="password" autocomplete="off" required onmouseout="check_password()"></a> <br>
+              </form>
+               <br>
+              <a href="../index.html"><button id="btn1" type="button"  onclick="myFunction()" disabled >Continue</button></a> <br> <br>
+              <span>By continue, you agree to Shopify's term of use and privacy notice.</span>
+              <hr>
+              <span>New to My Cart</span> <br> <br>
+              <a href="./create_account.html"><button id="btn2" type="button" >Create your account </button></a> 
+              <hr>
+          
+              <!-- footer -->
+              <a href="./terms_use.html"><span> Terms of use </span></a> &emsp;
+              <a href="./privacy_policy.html"><span> Privacy Note </span></a> &emsp;
+        </fieldset>
+    </section>
+
+    <!-- scripting -->
+    <script>
+        function myFunction() {
+        alert("You are signed in to Shopify");
+      }
+      function check_password(){
+      var email=document.getElementById("email").value;
+      var password=document.getElementById("password").value;
+      if(email=="priyanshu0553.be20@chitkara.edu.in" || email=="raghav0560.be20@chitkara.edu.in" && password=="priyanshu" || password=="raghav"){
+      document.getElementById("btn1").disabled=false;}
+       else{document.getElementById("btn").disabled=true;}
+        }
+      </script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+
+    <!-- favicon icon -->
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">  
+
+    <!-- css linking -->
+    <link rel="stylesheet" href="./style.css">
+ 
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+ 
+</head>
+<body>
+
+    <!-- header -->
+    <header class="header" id="header1">
+        <!-- navbar -->
+        <div class="nav">
+            <h2>Shopify's Create Account</h2>
+        </div>
+    </header>
+
+    <!-- Create Account -->
+    <section class="create_account">
+        <table align="center" cellspacing="5" cellpadding="5">
+
+            <form>
+                <tr>
+                    <td><label for="name"><i class="bi bi-person-fill"></i> Your Name</label></td>
+                    <td> <input type="text" id="name" autocomplete="off" onkeyup="uppercase()"> </td>
+                </tr>   
+                <tr>
+                    <td><label for="contact"><i class="bi bi-phone-fill"></i> Mobile Number</label></td>
+                    <td><input type="number" id="contact" pattern="[0-9]{10}" maxlength="10" onkeyup="enable_button()"  autocomplete="off"  required> </td>
+                </tr>
+                
+                <tr>
+                    <td><label for="email"><i class="bi bi-envelope-fill"></i> Email</label></td>
+                    <td><input type="email" id="email" placeholder="email@gmail.com" autocomplete="off"></td>
+                </tr>
+                <tr>
+                    <td><label for="password"><i class="bi bi-key-fill"></i> Password</label></td>
+                    <td><input type="password" id="password"  autocomplete="off" required></td>
+                </tr>
+                <tr>
+                    <td><label for="Otp">OTP</label></td>
+                    <td><input type="number" id="otp" autocomplete="off" required onkeyup="continue1()"></td>
+                </tr>
+                
+            </form>
+        </table>
+            <br>
+            <button type="submit" id="otp-button" onclick="otp()" disabled>Get OTP</button>
+            <a href="../index.html"><button button id="continue-button" type="submit" onclick="myFunction()" disabled>Continue</button></a> <br> <br>
+            <hr>
+            <span>Already have an account?
+            <a href="./sign_in.html" class="btn btn-primary" >Sign in</a> </span>
+            <hr>
+        <!-- footer -->
+        <a href="./terms_use.html"><span> Terms of use </span></a> &emsp;
+        <a href="./privacy_policy.html"><span> Privacy Note </span></a>
+    </section>
+    
+    <!-- scripting -->
+    <script>
+            function myFunction() {
+            confirm("You have created account and ready to use.");
+          }
+          function otp(){
+           var digits = '0123456789';
+           let OTP = '';
+           for (let i = 0; i < 4; i++ ) {
+            OTP += digits[Math.floor(Math.random() * 10)];
+           }
+           alert("Your OTP is "+ OTP );
+           }
+           function uppercase(){
+           document.getElementById("name").value=document.getElementById("name").value.toUpperCase();}
+    
+     function continue1(){
+     var a=document.getElementById("name").value;
+     var b=document.getElementById("contact").value;
+     var c=document.getElementById("email").value;
+     var d=document.getElementById("password").value;
+     var e=document.getElementById("otp").value;
+     if(a,b,c,d,e!=""){document.getElementById("continue-button").disabled=false;}
+     }
+     function enable_button(){
+       var a=document.getElementById("contact").value;
+       if(a!=""){document.getElementById("otp-button").disabled=false;}
+       else{alert("You have to fill mobile number.");}
+     }
+     </script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+
+    <!-- favicon icon -->
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">  
+
+    <!-- css linking -->
+    <link rel="stylesheet" href="./style.css">
+ 
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+ 
+</head>
+<body>
+
+    <!-- header -->
+    <header class="header" id="header1">
+        <!-- navbar -->
+        <div class="nav">
+            <h2>Shopify's Feedback Form<a href="../index.html"><i class="fas fa-home"></i></a></h2>
+        </div>
+    </header>
+
+    <!-- feedback -->
+    <section class="feedback">
+        <fieldset>
+            <h1>Feedback Form</h1>
+            
+            <table align="center" cellspacing="5" cellpadding="5">
+                <form>  
+                    <tr>
+                        <td><label for="fname"><i class="bi bi-person-fill"></i> Name</label></td>
+                        <td> <input type="text" id="fname" autocomplete="off"> </td>
+                    </tr>
+                    <tr>
+                        <td><label for="email"><i class="bi bi-envelope-fill"></i> Email</label></td>
+                        <td><input type="text" id="email" placeholder="email@gmail.com" autocomplete="off"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="contact"><i class="bi bi-telephone-fill"></i>Contact Number</label></td>
+                        <td><input type="text" id="contact" pattern="^\d{10}$" title="only conatain 10 digits" maxlength="10" autocomplete="off"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="country"><i class="bi bi-house-fill"></i>Country</label></td>
+                        <td><select id="country" name="country">
+                        <option value="India">India</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                        <option value="australia">Australia</option>
+                        <option value="brazil">Brazil</option> 
+                        <option value="newzealand">New zealand</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td><label><i class="bi bi-star-fill"></i>How was the project?</label></td>
+                        <td>
+                            <span><input type="radio" id="poor" name="rate" value="poor"></span>
+                            <label for="poor">Poor</label> &nbsp;
+                            <span><input type="radio" id="okay" name="rate" value="okay"></span>
+                            <label for="okay">Okay</label> &nbsp;
+                            <span><input type="radio" id="great" name="rate" value="great"></span>
+                            <label for="great">Great</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="feedback"> <i class="bi bi-chat-left-dots-fill"></i>What is good in this project?</label></td>
+                        <td><textarea id="feedback" name="feedback" placeholder="Write something.." rows="2" cols="15"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><label><i class="bi bi-star-fill"></i>Would you like to have these kind of projects in future?</label></td>
+                        <td>
+                            <span><input type="radio" id="yes" name="yes" value="yes"></span>
+                            <label for="yes">Yes</label> &nbsp;
+                            <span><input type="radio" id="no" name="yes" value="yes"></span>
+                            <label for="no">No</label> &nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> <label for="msg"><i class="bi bi-chat-left-dots-fill"></i>What change you would recommend to this project?</label></td>
+                        <td><textarea id="msg" name="msg" placeholder="Write suggestions if any.." rows="2" cols="15"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td> <label for="comments"><i class="bi bi-chat-left-dots-fill"></i>Comment</label></td>
+                        <td><textarea id="comments" name="comments" placeholder="comments.." rows="2" cols="15"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td> <button type="submit" value="submit">Submit</button></td>
+                    </tr>
+                </form>  
+            </table>
+        </fieldset>
+        <!-- footer -->
+        <a href="./terms_use.html"><span> Terms of use </span></a> &emsp;
+        <a href="./privacy_policy.html"><span> Privacy Note </span></a>
+        <hr>
+        <button type="button" onclick="window.location.href='./thanks.html'"> Proceed </button>
+    </section>
+  
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Gateway</title>
+
+    <!-- favicon icon -->
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">  
+
+    <!-- css linking -->
+    <link rel="stylesheet" href="./style.css">
+ 
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+ 
+</head>
+<body>
+
+    <!-- header -->
+    <header class="header" id="header1">
+        <!-- navbar -->
+        <div class="nav">
+            <h2> Shopify's Payment Gateway<a href="../index.html"><i class="fas fa-home"></i></a></h2>
+        </div>
+    </header>
+
+    <!-- payment gateway -->
+    <section class="payment">
+        <fieldset>
+            <h1>Payment Gateway</h1>
+            <table align="center" cellspacing="5" cellpadding="5">
+                <form>  
+                  <section id="billing">
+                    <tr>
+                        <th><h3>Billing Address</h3></th>
+                        <td><label for="fname"><i class="bi bi-person-fill"></i> Name</label></td>
+                        <td> <input type="text" id="fname" placeholder="John Watt" autocomplete="off"> </td>
+                    </tr>
+                    <tr>
+                      <th></th>
+                        <td><label for="email"><i class="bi bi-envelope-fill"></i> Email</label></td>
+                        <td><input type="text" id="email" placeholder="email@gmail.com"  autocomplete="off"></td>
+                    </tr>
+                    <tr>
+                      <th></th>
+                        <td><label for="contact"><i class="bi bi-telephone-fill"></i>Contact Number</label></td>
+                        <td><input type="text" id="contact" placeholder="XXXXXXXXXX" maxlength="10" autocomplete="off"></td>
+                    </tr>
+                    <tr>
+                      <th></th>
+                      <td><label for="address"><i class="fas fa-address-card"></i>Address</label></td>
+                      <td><input type="text" id="address" placeholder="542 W. 15th Street"  autocomplete="off"></td>
+                    </tr>
+                    <tr>
+                      <th></th>
+                      <td><label for="city"><i class="fas fa-university"></i>City</label></td>
+                      <td><input type="text" id="city" placeholder="America" autocomplete="off"></td>
+                    </tr>          
+                  </section>
+                  <section id="pay">
+                    <tr>
+                        <th><h3>Payment</h3></th>
+                        <td><label for="accepted"> Accepted Cards</label></td>
+                        <td>  <i class="fa fa-cc-visa" style="color:white"></i>
+                          <i class="fa fa-cc-amex" style="color:lavender;"></i>
+                          <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                          <i class="fa fa-cc-discover" style="color:orange;"></i></td>
+                    </tr>
+                    <tr>
+                      <th></th>
+                        <td><label for="name">Name on Card</label></td>
+                        <td><input type="text" id="name" placeholder="John Watt" autocomplete="off"></td>
+                    </tr>
+                    <tr>
+                      <th></th>
+                        <td><label for="number">Credit Card Number</label></td>
+                        <td><input type="text" id="number" placeholder="1111-2222-3333-4444" autocomplete="off"></td>
+                    </tr>
+                    <tr>
+                      <th></th>
+                      <td><label for="expiry">Exp Month</label></td>
+                      <td><input type="text" id="expiry" placeholder="November" autocomplete="off"></td>
+                    </tr>
+                    <tr>
+                      <th></th>
+                      <td><label for="exp">Exp Year</label></td>
+                      <td><input type="text" id="exp" placeholder="2022" autocomplete="off"></td>
+                    </tr>  
+                    <tr>
+                      <th></th>
+                      <td><label for="cvv">CVV</label></td>
+                      <td><input type="text" id="cvv" placeholder="355"  autocomplete="off"></td>
+                    </tr>          
+                  </section>
+                  <tr>
+                    <th></th>
+                    <td><label>
+                      <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+                    </label></td>
+                  </tr>
+                    <tr>
+                      <th></th>
+                      <td> <button type="submit" id="pay_checkout" value="Continue to checkout"><a href="./help.html">Continue to checkout</a></button> </td>
+                    </tr>
+                </form>  
+            </table>
+        </fieldset>
+    </section>
+</body>
+</html>
